@@ -50,13 +50,35 @@ Completed four practical SQL assessment tasks covering employee data cleaning, s
 - Calculating product revenue using `Price * Quantity`
 - Analysing employee salaries, student marks, product sales, and hospital appointments
 
-## Week 3 – In Progress
+## Week 3 – SQL Joins and Advanced Query Practice
 
-This section will be updated with new SQL practice tasks as I continue learning.
+Completed two practical SQL tasks focused on joining related tables, conditional logic, date filtering, and aggregate calculations using real-world scenarios.
+
+### Tasks Covered
+
+1. **AI Model and API Usage Analysis** – AI model details, API usage records, estimated API costs, response-time classification, and usage analysis.
+2. **Customer and Chatbot Interaction Analysis** – customer information, chatbot interactions, response status, satisfaction scores, and resolution-time analysis.
+
+### Topics Practised
+
+- `INNER JOIN` – retrieving matching records from two tables
+- `LEFT JOIN` – retrieving all records from the left table and matching records from the right table
+- `RIGHT JOIN` – retrieving all records from the right table and matching records from the left table
+- `UNION` and `UNION ALL` – combining query results
+- Simulating `FULL OUTER JOIN` in MySQL using `LEFT JOIN`, `RIGHT JOIN`, and `UNION`
+- Conditional logic and NULL handling using `CASE WHEN`, `ELSE`, `COALESCE()`, `IFNULL()`, and `NULLIF()`
+- Handling missing values using `NULL` and `IS NULL`
+- Aggregate functions: `COUNT()`, `SUM()`, `AVG()`, `MIN()`, and `MAX()`
+- Grouping data using `GROUP BY`
+- Calculating estimated API costs using token counts and model pricing
+- Classifying API response times as Fast, Moderate, Slow, or Not Available
+- Date filtering using `CURDATE()`, `YEAR()`, `MONTH()`, and date comparisons
+- String functions: `UPPER()`, `SUBSTRING_INDEX()`, and `LENGTH()`
+- Analysing API usage, customer interactions, and chatbot performance
 
 ## Goal
 
-To strengthen my SQL fundamentals through consistent practice, practical assessments, and real-world database scenarios.
+To strengthen my SQL fundamentals through consistent practice, practical assessments, and real-world database scenarios while developing my database querying and data analysis skills.
 
 ## Tools Used
 
