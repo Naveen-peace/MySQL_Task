@@ -76,9 +76,53 @@ Completed two practical SQL tasks focused on joining related tables, conditional
 - String functions: `UPPER()`, `SUBSTRING_INDEX()`, and `LENGTH()`
 - Analysing API usage, customer interactions, and chatbot performance
 
+## Week 4 – Employee Performance and Project Management System
+
+Completed an intermediate-level MySQL technical assessment consisting of 12 practical SQL problems focused on employee management, department-wise salary analysis, project allocation, and business reporting.
+
+### Tasks Covered
+
+1. **Employee and Department Report** – Display employee details, department names, salaries, joining dates, and years of experience.
+2. **Salary Classification** – Classify employees into Low, Medium, and High salary categories.
+3. **Department-wise Salary Analysis** – Calculate total salary, average salary, highest salary, and employee count. Filter departments using `HAVING`.
+4. **Employee and Manager Details** – Display employee names with their respective manager names and identify employees without managers.
+5. **Employee and Project Allocation Report** – Display employee-project combinations, including employees without projects and projects without employees.
+6. **Company and Department Salary Comparison** – Identify employees earning more than the company's average salary and their respective department's average salary.
+7. **Department and IT Salary Analysis** – Find employees working in the same department as a given employee and employees earning more than the IT department's average salary.
+8. **Salary Ranking Analysis** – Identify the second-highest-paid employee and the highest-paid employee in each department.
+9. **Project Budget Analysis** – Find employees assigned to projects with budgets greater than the average project budget.
+10. **Project Working Hours Analysis** – Identify employees working on projects with more hours than the average project working hours.
+11. **Employee Project Count Analysis** – Calculate the total number of projects assigned to each employee and identify employees with above-average project counts.
+12. **Employee and Project Combinations** – Display all possible employee-project combinations using `CROSS JOIN`.
+
+### Topics Practised
+
+- Advanced JOIN operations using `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN`
+- Simulating `FULL OUTER JOIN` using `LEFT JOIN`, `RIGHT JOIN`, and `UNION`
+- `CROSS JOIN` – generating all possible combinations between employees and projects
+- `Subqueries` Using `IN`, `ANY`, and `ALL` operators.
+- `Nested Subqueries` – Writing a subquery inside another subquery to perform multi-level filtering.
+- `Correlated subqueries`– comparing employee salaries with their respective department averages
+- Single-row and multiple-row subqueries
+- Using `IN` and `=` operators with subqueries
+- Aggregate functions: `COUNT()`, `SUM()`, `AVG()`, `MIN()`, and `MAX()`
+- Rounding numerical results using `ROUND()`
+- Department-wise and employee-wise aggregation using `GROUP BY`
+- Filtering aggregated results using `HAVING`
+- Calculating company-wide and department-wise average salaries
+- Calculating average project budgets and working hours using subqueries
+- Calculating average projects per employee using `COUNT()` and division
+- Using `LEFT JOIN` to include employees without assigned projects
+- Identifying missing records using `IS NULL`
+- Combining JOINs, aggregate functions, and subqueries in practical business queries
+- Using `CASE WHEN` and `ELSE` for conditional report classification
+- Sorting query results using `ORDER BY ASC` and `DESC`
+- Understanding the difference between `WHERE` and `HAVING`
+- Analysing employee performance, salary distribution, project budgets, project allocation, and working hours
+
 ## Goal
 
-To strengthen my SQL fundamentals through consistent practice, practical assessments, and real-world database scenarios while developing my database querying and data analysis skills.
+To strengthen my SQL fundamentals through consistent practice, practical assessments, and real-world database scenarios while developing my database querying, problem-solving, and data analysis skills.
 
 ## Tools Used
 
