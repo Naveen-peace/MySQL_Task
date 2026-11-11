@@ -1,6 +1,6 @@
 # MySQL Weekly Practice Tasks
 
-This repository contains my weekly MySQL practice tasks, SQL queries, and hands-on assessments as I learn database management and SQL.
+This repository contains my weekly MySQL practice tasks, SQL queries, and hands-on technical assessments as I learn database management and SQL.
 
 ## Week 1 – SQL Fundamentals and Database Practice
 
@@ -100,9 +100,9 @@ Completed an intermediate-level MySQL technical assessment consisting of 12 prac
 - Advanced JOIN operations using `INNER JOIN`, `LEFT JOIN`, and `RIGHT JOIN`
 - Simulating `FULL OUTER JOIN` using `LEFT JOIN`, `RIGHT JOIN`, and `UNION`
 - `CROSS JOIN` – generating all possible combinations between employees and projects
-- `Subqueries` Using `IN`, `ANY`, and `ALL` operators.
-- `Nested Subqueries` – Writing a subquery inside another subquery to perform multi-level filtering.
-- `Correlated subqueries`– comparing employee salaries with their respective department averages
+- Subqueries using `IN`, `ANY`, and `ALL` operators
+- Nested subqueries – writing a subquery inside another subquery for multi-level filtering
+- Correlated subqueries – comparing employee salaries with their respective department averages
 - Single-row and multiple-row subqueries
 - Using `IN` and `=` operators with subqueries
 - Aggregate functions: `COUNT()`, `SUM()`, `AVG()`, `MIN()`, and `MAX()`
@@ -120,9 +120,100 @@ Completed an intermediate-level MySQL technical assessment consisting of 12 prac
 - Understanding the difference between `WHERE` and `HAVING`
 - Analysing employee performance, salary distribution, project budgets, project allocation, and working hours
 
+## Week 5 – Advanced MySQL Technical Assessment
+
+Completed a five-question intermediate-to-advanced MySQL technical assessment covering HR analytics, employee management, project and budget analysis, advanced employee data analysis, and database operations.
+
+### Assessment Questions Covered
+
+1. **Employee Performance and Salary Analysis** – Analyse employee salary distribution, compare salaries with department averages, generate department-wise salary reports, classify employees using `CASE`, and identify the second-highest salary.
+
+2. **Employee Management and Reporting Hierarchy** – Display employee-manager relationships, compare employee and manager salaries, perform nested subqueries, and generate employee hierarchies using recursive CTEs.
+
+3. **Project and Budget Analysis** – Analyse employee project allocations, project budgets, project status, employee-wise project budgets, and project start dates.
+
+4. **Advanced Employee Data Analysis** – Rank employees by salary, calculate department-wise rankings, compare salaries with company averages, identify the highest-paid employee in each department, and calculate salary differences using window functions.
+
+5. **Business Database Operations and Management** – Modify employee table structures, update salaries, handle NULL values, filter and sort employee records, use CTEs, demonstrate transactions, create views, and understand database constraints.
+
+### Topics Practised
+
+**1. Common Table Expressions (CTEs)**
+
+- Regular CTE using `WITH`
+- Recursive CTE using `WITH RECURSIVE`
+- Using CTEs for temporary result sets
+- Using CTEs with aggregate functions and subqueries
+- Finding company-wide average salary using a CTE
+- Identifying the highest-paid employee in each department using a CTE
+- Generating employee reporting hierarchies using recursive CTEs
+
+**2. Window Functions**
+
+- `OVER()` – applying window calculations without grouping individual rows
+- `PARTITION BY` – dividing rows into groups for separate calculations
+- `ORDER BY` inside window functions – defining the order of calculation
+- `ROW_NUMBER()` – assigning a unique row number
+- `RANK()` – ranking records with gaps after ties
+- `DENSE_RANK()` – ranking records without gaps after ties
+- `LAG()` – retrieving the previous row's value
+- `LEAD()` – retrieving the next row's value
+- `NTILE()` – dividing records into a specified number of groups
+- `FIRST_VALUE()` – retrieving the first value in a window
+- `LAST_VALUE()` – retrieving the last value in a window
+
+**3. Views**
+
+- Creating views using `CREATE VIEW`
+- Retrieving records from views using `SELECT`
+- Joining multiple tables inside a view
+- Creating employee reports using views
+- Displaying employee name, department name, salary, and location through a view
+
+**4. Data Control Language (DCL)**
+
+- `GRANT` – providing database privileges to users
+- `REVOKE` – removing database privileges from users
+- Understanding database access permissions and user privileges
+
+**5. Transaction Control Language (TCL)**
+
+- `START TRANSACTION` – starting a transaction
+- `COMMIT` – saving transaction changes
+- `ROLLBACK` – cancelling uncommitted changes
+- Understanding transaction management and data consistency
+- Performing salary updates within transactions
+- Understanding the difference between `COMMIT` and `ROLLBACK`
+
+**6. Additional SQL Concepts**
+
+- Self joins for employee-manager relationships
+- Nested and correlated subqueries
+- Subqueries using `ANY` and `ALL`
+- Aggregate functions: `COUNT()`, `SUM()`, `AVG()`, `MIN()`, and `MAX()`
+- Conditional expressions using `CASE WHEN` and `ELSE`
+- NULL handling using `COALESCE()` and `IFNULL()`
+- Date calculations using `DATEDIFF()` and date functions
+- Filtering using `WHERE`, `BETWEEN`, `LIKE`, `IN`, and logical operators
+- Sorting using `ORDER BY DESC`
+- Limiting results using `LIMIT`
+- Adding columns and modifying table structures using `ALTER TABLE`
+- Updating records using `UPDATE`
+- Database constraints: `PRIMARY KEY`, `FOREIGN KEY`, `UNIQUE`, `NOT NULL`, `DEFAULT`, and `CHECK`
+- Maintaining data integrity using constraints
+- Creating a positive salary validation rule using `CHECK`
+
+## Overall SQL Concepts Learned
+
+- **DDL (Data Definition Language):** `CREATE`, `ALTER`, `DROP`, `TRUNCATE`, and `RENAME`
+- **DML (Data Manipulation Language):** `INSERT`, `UPDATE`, and `DELETE`
+- **DQL (Data Query Language):** `SELECT`
+- **DCL (Data Control Language):** `GRANT` and `REVOKE`
+- **TCL (Transaction Control Language):** `START TRANSACTION`, `COMMIT`, and `ROLLBACK`
+
 ## Goal
 
-To strengthen my SQL fundamentals through consistent practice, practical assessments, and real-world database scenarios while developing my database querying, problem-solving, and data analysis skills.
+To strengthen my SQL fundamentals through consistent practice, practical assessments, and real-world database scenarios while developing my database querying, problem-solving, database management, and data analysis skills.
 
 ## Tools Used
 

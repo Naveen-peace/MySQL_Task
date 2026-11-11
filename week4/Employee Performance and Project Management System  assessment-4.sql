@@ -79,8 +79,7 @@ select e.employee_name,d.department_name,e.salary from employee_perform e inner 
 where e.salary >(select avg(salary) from employee_perform) and e.salary >(select avg(e1.salary) from employee_perform e1 where e1.department_id = e.department_id) order by e.department_id asc;
  
 #7. Find employees who work in the same department as a given employee and employees whose salary is greater than the average salary of the IT department. 
-select employee_name,salary from employee_perform 
-where salary>(select avg(e.salary) from employee_perform e inner join departments d on e.department_id = d.department_id where department_name = 'IT');
+ 
 
 #8. Identify the second-highest-paid employee in the company and the highest-paid employee in each department. 
 select employee_name ,salary from employee_perform where salary = (select max(salary) from employee_perform where salary < (select max(salary) from employee_perform));
@@ -88,14 +87,20 @@ select employee_name ,salary from employee_perform where salary = (select max(sa
 #9. Find employees who are assigned to projects with a budget greater than the average project budget. 
 select e.employee_id,e.employee_name,p.project_name,p.budget from employee_perform e 
 inner join projects p on p.employee_id = e.employee_id where p.budget > (select avg(budget) from projects ) ;
+# difference
+select * from projects where budget >(select avg(budget) from projects);
+
 
 #10. Identify employees who have worked on projects with more hours than the average project working hours. 
 select p.project_id,p.project_name,e.employee_id,e.employee_name,sum(hours_worked) as total_hour from projects p inner join employee_perform e on p.employee_id = e.employee_id
 where p.hours_worked >(select avg(hours_worked) from projects ) group by p.project_id,p.project_name,e.employee_id,e.employee_name;
+#difference
+select * from projects where hours_worked >(select avg(hours_worked) from projects);
 
 #11. Generate a report showing each employee's total number of assigned projects and identify employees who are assigned to more projects than the average number of projects per employee. 
 select e.employee_id,e.employee_name,count(p.project_id) as assigned_projects_no from employee_perform e left join projects p on e.employee_id = p.employee_id
 group by e.employee_id,e.employee_name ;
+#difference
 select e.employee_id,e.employee_name,count(p.project_id) as assigned_projects_no from employee_perform e left join projects p on e.employee_id = p.employee_id
 group by e.employee_id,e.employee_name having count(p.project_id) >(select count(*) from projects)/(select count(*) from employee_perform);
 
